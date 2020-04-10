@@ -1,6 +1,6 @@
 (function(){
     if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") == ''){
-        if(new Date().getHours() > 22 || new Date().getHours() < 6){
+        if(new Date().getHours() > 15 || new Date().getHours() < 6){
             $('body').toggleClass('night');
             $('html').toggleClass('night');
             $('.icon-light-mode').css('display','none');
